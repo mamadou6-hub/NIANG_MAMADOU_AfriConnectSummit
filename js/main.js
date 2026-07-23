@@ -1,7 +1,7 @@
 /**
  * ============================================
  * AFRICONNECT SUMMIT 2026 - JAVASCRIPT
- * Version complète (Commit 6)
+ * Toutes les pages
  * ============================================
  */
 
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // ============================================
-    // 3. ANIMATIONS AU SCROLL
+    // 3. ANIMATIONS AU SCROLL (IntersectionObserver)
     // ============================================
 
     (function initScrollAnimations() {
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // ============================================
-    // 4. ONGLETS PROGRAMME
+    // 4. ONGLETS PROGRAMME (page programme.html)
     // ============================================
 
     (function initTabs() {
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // ============================================
-    // 5. FILTRAGE INTERVENANTS
+    // 5. FILTRAGE INTERVENANTS (page intervenants.html)
     // ============================================
 
     (function initFilters() {
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // ============================================
-    // 6. VALIDATION FORMULAIRE
+    // 6. VALIDATION FORMULAIRE (page contact.html)
     // ============================================
 
     (function initFormValidation() {
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 nom.classList.add('success');
             }
 
-            // Validation Email
+            // Validation Email (regex)
             const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
             if (!email.value.trim() || !emailRegex.test(email.value.trim())) {
                 email.classList.add('error');
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 email.classList.add('success');
             }
 
-            // Validation Téléphone
+            // Validation Telephone (min 8 chiffres)
             const phoneDigits = telephone.value.replace(/\D/g, '');
             if (!telephone.value.trim() || phoneDigits.length < 8) {
                 telephone.classList.add('error');
@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 pays.classList.add('success');
             }
 
-            // Validation Message
+            // Validation Message (min 20 caracteres)
             if (!message.value.trim() || message.value.trim().length < 20) {
                 message.classList.add('error');
                 messageError.classList.add('visible');
@@ -265,6 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 message.classList.add('success');
             }
 
+            // Si tout est valide
             if (isValid) {
                 successMsg.classList.add('show');
                 successMsg.style.display = 'block';
@@ -280,6 +281,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
+        // Validation en temps reel
         const inputs = form.querySelectorAll('input, select, textarea');
         inputs.forEach(function(input) {
             input.addEventListener('blur', function() {
@@ -295,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // ============================================
-    // 7. BOUTON RETOUR EN HAUT
+    // 7. BOUTON RETOUR EN HAUT (toutes les pages)
     // ============================================
 
     (function initBackToTop() {
@@ -321,7 +323,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // ============================================
-    // 8. ANNÉE DYNAMIQUE
+    // 8. ANNEE DYNAMIQUE DANS LE FOOTER
     // ============================================
 
     (function initCopyright() {
@@ -335,7 +337,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     // ============================================
-    // 9. COMPTE A REBOURS
+    // 9. COMPTE A REBOURS (page accueil)
     // ============================================
 
     (function initCountdown() {
