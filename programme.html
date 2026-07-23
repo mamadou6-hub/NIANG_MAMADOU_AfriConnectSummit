@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+    <!-- ===== NAVBAR ===== -->
     <header class="navbar">
         <a href="index.html" class="logo"><i class="fas fa-globe-africa"></i> AfriConnect</a>
         <input type="checkbox" id="menu-toggle" class="menu-toggle" />
@@ -31,7 +32,10 @@
         </div>
     </header>
 
+    <!-- ===== PAGE PROGRAMME ===== -->
     <main>
+
+        <!-- Hero interne -->
         <section class="inner-hero">
             <div class="container">
                 <div class="breadcrumb">
@@ -43,14 +47,99 @@
                 <p>Trois jours d'innovation, de partage et de networking au cœur de l'Afrique.</p>
             </div>
         </section>
+
+        <!-- ===== ONGLETS 3 JOURS ===== -->
         <section class="container">
-            <!-- Contenu à venir -->
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-day="1">Jour 1 · 15 Oct</button>
+                    <button class="tab-btn" data-day="2">Jour 2 · 16 Oct</button>
+                    <button class="tab-btn" data-day="3">Jour 3 · 17 Oct</button>
+                </div>
+
+                <!-- Jour 1 -->
+                <div class="tab-content active" id="day1">
+                    <h2 class="day-title"><i class="fas fa-calendar-day"></i> Mercredi 15 octobre 2026</h2>
+                    <table class="schedule">
+                        <thead>
+                            <tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>09:00</td><td>Keynote d'ouverture</td><td>Amara Diallo</td><td>Grande salle</td></tr>
+                            <tr><td>10:30</td><td>IA générative en Afrique</td><td>Zahara Okafor</td><td>Salle 1</td></tr>
+                            <tr><td>12:00</td><td>Déjeuner networking</td><td>—</td><td>Espace VIP</td></tr>
+                            <tr><td>14:00</td><td>Fintech et inclusion</td><td>Kofi Mensah</td><td>Salle 2</td></tr>
+                            <tr><td>15:30</td><td>Panel : Écosystème startup</td><td>Youssouf Ndiaye</td><td>Grande salle</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Jour 2 -->
+                <div class="tab-content" id="day2">
+                    <h2 class="day-title"><i class="fas fa-calendar-day"></i> Jeudi 16 octobre 2026</h2>
+                    <table class="schedule">
+                        <thead>
+                            <tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>09:00</td><td>Design Thinking</td><td>Fatima Sy</td><td>Salle 1</td></tr>
+                            <tr><td>10:30</td><td>Data Science & Analytics</td><td>Zahara Okafor</td><td>Grande salle</td></tr>
+                            <tr><td>12:00</td><td>Déjeuner</td><td>—</td><td>Espace VIP</td></tr>
+                            <tr><td>14:00</td><td>Cybersécurité</td><td>Abdoulaye Diop</td><td>Salle 2</td></tr>
+                            <tr><td>15:30</td><td>Pitch compétition</td><td>Jury</td><td>Grande salle</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Jour 3 -->
+                <div class="tab-content" id="day3">
+                    <h2 class="day-title"><i class="fas fa-calendar-day"></i> Vendredi 17 octobre 2026</h2>
+                    <table class="schedule">
+                        <thead>
+                            <tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>09:00</td><td>Agritech & Innovation</td><td>Moussa Traoré</td><td>Salle 1</td></tr>
+                            <tr><td>10:30</td><td>Intelligence économique</td><td>Kofi Mensah</td><td>Grande salle</td></tr>
+                            <tr><td>12:00</td><td>Déjeuner</td><td>—</td><td>Espace VIP</td></tr>
+                            <tr><td>14:00</td><td>Green Tech</td><td>Nadia Benali</td><td>Salle 2</td></tr>
+                            <tr><td>15:30</td><td>Clôture & Remerciements</td><td>Youssouf Ndiaye</td><td>Grande salle</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
+
+        <!-- ===== THÉMATIQUES ===== -->
         <section class="container section-fade">
-            <!-- Contenu à venir -->
+            <h2 class="section-title"><i class="fas fa-tags"></i> Thématiques 2026</h2>
+            <div class="themes-grid">
+                <div class="theme-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>IA & Data</h3>
+                    <p>Intelligence artificielle, machine learning et big data au service du continent.</p>
+                </div>
+                <div class="theme-card">
+                    <i class="fas fa-coins"></i>
+                    <h3>Fintech</h3>
+                    <p>Innovations financières, mobile money et inclusion bancaire en Afrique.</p>
+                </div>
+                <div class="theme-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Agritech</h3>
+                    <p>Technologies agricoles, irrigation intelligente et sécurité alimentaire.</p>
+                </div>
+                <div class="theme-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Cybersécurité</h3>
+                    <p>Protection des données, infrastructures et souveraineté numérique.</p>
+                </div>
+            </div>
         </section>
+
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer class="container footer">
         <div class="footer-col">
             <h4><i class="fas fa-globe-africa"></i> AfriConnect</h4>

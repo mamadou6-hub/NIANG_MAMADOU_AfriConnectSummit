@@ -311,3 +311,147 @@ body[data-theme="dark"] .navbar-scrolled {
     transform: scale(1.02);
     border-color: var(--aqua);
 }
+
+/* ============================================
+   COMMIT 4 - STYLES PAGE PROGRAMME
+   ============================================ */
+
+/* ===== ONGLETS ===== */
+.tabs-container {
+    margin: 40px 0 20px;
+}
+
+.tabs-nav {
+    display: flex;
+    gap: 8px;
+    border-bottom: 2px solid var(--bordure);
+    padding-bottom: 4px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 14px 32px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--texte-clair);
+    cursor: pointer;
+    border-radius: 12px 12px 0 0;
+    transition: 0.3s;
+}
+
+.tab-btn:hover {
+    color: var(--texte);
+    background: var(--blanc);
+}
+
+.tab-btn.active {
+    color: var(--aqua);
+    background: var(--blanc);
+    border-bottom: 3px solid var(--aqua);
+}
+
+.tab-content {
+    display: none;
+    padding: 24px 0;
+    animation: fadeTab 0.4s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeTab {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.day-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: var(--aqua);
+}
+
+.day-title i {
+    margin-right: 12px;
+}
+
+/* ===== TABLEAU PROGRAMME ===== */
+.schedule {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: var(--coins);
+    overflow: hidden;
+    box-shadow: var(--ombre);
+}
+
+.schedule thead {
+    background: var(--aqua);
+    color: #fff;
+}
+
+.schedule th {
+    padding: 14px 20px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.schedule td {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--bordure);
+}
+
+.schedule tbody tr:nth-child(even) {
+    background: var(--blanc);
+}
+
+.schedule tbody tr:nth-child(odd) {
+    background: var(--bg);
+}
+
+.schedule tbody tr:hover {
+    background: var(--aqua-clair);
+    color: #fff;
+}
+
+/* ===== THÉMATIQUES ===== */
+.themes-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin: 20px 0 40px;
+}
+
+.theme-card {
+    background: var(--blanc);
+    border-radius: var(--coins);
+    padding: 32px 28px;
+    border: 1px solid var(--bordure);
+    box-shadow: var(--ombre);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.theme-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--aqua);
+}
+
+.theme-card i {
+    font-size: 2.8rem;
+    color: var(--aqua);
+    margin-bottom: 14px;
+}
+
+.theme-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.theme-card p {
+    color: var(--texte-clair);
+    margin-top: 6px;
+}
