@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
@@ -34,17 +34,120 @@
 
     <!-- ===== PAGE ACCUEIL ===== -->
     <main>
+
+        <!-- Section Hero -->
         <section class="hero container">
             <div class="hero-content">
-                <!-- Contenu à venir -->
+                <div class="hero-badge">
+                    <i class="fas fa-calendar-alt"></i> 15 – 17 Oct 2026 · Dakar
+                </div>
+                <h1>L'innovation <span>africaine</span><br />prend racine ici.</h1>
+                <p>Développeurs, entrepreneurs et investisseurs se rencontrent pour construire l'avenir numérique du continent.</p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn btn-primary"><i class="fas fa-ticket-alt"></i> Je m'inscris</a>
+                    <a href="programme.html" class="btn btn-outline"><i class="fas fa-play-circle"></i> Voir le programme</a>
+                </div>
+                <div class="countdown">
+                    <div class="countdown-item"><span class="number" id="days">--</span><div class="label">Jours</div></div>
+                    <div class="countdown-item"><span class="number" id="hours">--</span><div class="label">Heures</div></div>
+                    <div class="countdown-item"><span class="number" id="minutes">--</span><div class="label">Minutes</div></div>
+                    <div class="countdown-item"><span class="number" id="seconds">--</span><div class="label">Secondes</div></div>
+                </div>
             </div>
         </section>
+
+        <!-- Section Chiffres clés -->
         <section class="container section-fade">
-            <!-- Contenu à venir -->
+            <h2 class="section-title"><i class="fas fa-chart-line"></i> AfriConnect en chiffres</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">1 200+</div>
+                    <div class="stat-label">Participants</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">48</div>
+                    <div class="stat-label">Intervenants</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Jours</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Pays représentés</div>
+                </div>
+            </div>
         </section>
+
+        <!-- Section Pourquoi participer -->
         <section class="container section-fade">
-            <!-- Contenu à venir -->
+            <h2 class="section-title"><i class="fas fa-lightbulb"></i> Pourquoi participer ?</h2>
+            <div class="flex-3">
+                <div class="arg">
+                    <i class="fas fa-code"></i>
+                    <h3>Dev & IA</h3>
+                    <p>Ateliers pratiques, hackathons et keynote sur l'IA générative, la fintech et l'agritech.</p>
+                </div>
+                <div class="arg">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Networking</h3>
+                    <p>Rencontrez 500+ décideurs, investisseurs et talents venus de 25 pays africains.</p>
+                </div>
+                <div class="arg">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Startups</h3>
+                    <p>Pitch compétition, mentorat et accès à des fonds d'amorçage pour les projets prometteurs.</p>
+                </div>
+            </div>
         </section>
+
+        <!-- Section Intervenants vedettes -->
+        <section class="container section-fade">
+            <h2 class="section-title"><i class="fas fa-users"></i> Intervenants vedettes</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="avatar">A</div>
+                    <h4>Amara Diallo</h4>
+                    <div class="title">CTO, Wave Sénégal</div>
+                    <div class="country"><i class="fas fa-map-marker-alt"></i> Sénégal</div>
+                </div>
+                <div class="speaker-card">
+                    <div class="avatar">K</div>
+                    <h4>Kofi Mensah</h4>
+                    <div class="title">Investisseur, Seedstars</div>
+                    <div class="country"><i class="fas fa-map-marker-alt"></i> Ghana</div>
+                </div>
+                <div class="speaker-card">
+                    <div class="avatar">Z</div>
+                    <h4>Zahara Okafor</h4>
+                    <div class="title">Data Scientist, Google</div>
+                    <div class="country"><i class="fas fa-map-marker-alt"></i> Nigeria</div>
+                </div>
+                <div class="speaker-card">
+                    <div class="avatar">Y</div>
+                    <h4>Youssouf Ndiaye</h4>
+                    <div class="title">CEO, AfriLabs</div>
+                    <div class="country"><i class="fas fa-map-marker-alt"></i> Sénégal</div>
+                </div>
+            </div>
+            <div class="btn-center">
+                <a href="intervenants.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> Voir tous les intervenants</a>
+            </div>
+        </section>
+
+        <!-- Section Sponsors -->
+        <section class="container section-fade">
+            <h2 class="section-title"><i class="fas fa-handshake"></i> Nos sponsors</h2>
+            <div class="sponsors-tier">
+                <div class="sponsor gold"><i class="fas fa-crown"></i> Orange</div>
+                <div class="sponsor gold"><i class="fas fa-crown"></i> Ecobank</div>
+                <div class="sponsor silver"><i class="fas fa-star"></i> Google</div>
+                <div class="sponsor silver"><i class="fas fa-star"></i> Microsoft</div>
+                <div class="sponsor bronze"><i class="fas fa-medal"></i> AfriLabs</div>
+                <div class="sponsor bronze"><i class="fas fa-medal"></i> Wave</div>
+            </div>
+        </section>
+
     </main>
 
     <!-- ===== FOOTER ===== -->
