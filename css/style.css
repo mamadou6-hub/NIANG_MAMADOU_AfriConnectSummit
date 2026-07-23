@@ -455,3 +455,114 @@ body[data-theme="dark"] .navbar-scrolled {
     color: var(--texte-clair);
     margin-top: 6px;
 }
+/* ============================================
+   COMMIT 5 - STYLES PAGE INTERVENANTS
+   ============================================ */
+
+/* ===== FILTRES ===== */
+.filters-container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 20px 0 32px;
+}
+
+.filter-btn {
+    background: var(--blanc);
+    border: 1px solid var(--bordure);
+    padding: 10px 24px;
+    border-radius: 60px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--texte-clair);
+    cursor: pointer;
+    transition: 0.25s;
+    box-shadow: var(--ombre);
+}
+
+.filter-btn:hover {
+    border-color: var(--aqua);
+    color: var(--texte);
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: var(--aqua);
+    border-color: var(--aqua);
+    color: #fff;
+}
+
+/* ===== GRILLE INTERVENANTS ===== */
+.speakers-grid-full {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin: 16px 0 40px;
+}
+
+.speaker-full {
+    background: var(--blanc);
+    border-radius: var(--coins);
+    padding: 32px 20px;
+    text-align: center;
+    border: 1px solid var(--bordure);
+    transition: 0.3s;
+    box-shadow: var(--ombre);
+}
+
+.speaker-full:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 50px -20px rgba(26, 156, 138, 0.2);
+    border-color: var(--aqua);
+}
+
+.speaker-full .avatar-lg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--aqua-clair);
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.6rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.speaker-full h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.speaker-full .specialite {
+    color: var(--texte-clair);
+    font-size: 0.95rem;
+    margin: 4px 0;
+}
+
+.speaker-full .pays {
+    font-size: 0.85rem;
+    color: var(--aqua);
+    font-weight: 500;
+}
+
+.speaker-full .pays i {
+    margin-right: 6px;
+}
+
+.speaker-full .tag {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 16px;
+    border-radius: 60px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: var(--aqua-clair);
+    color: #fff;
+}
+
+.speaker-full.hidden {
+    display: none;
+}

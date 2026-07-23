@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+    <!-- ===== NAVBAR ===== -->
     <header class="navbar">
         <a href="index.html" class="logo"><i class="fas fa-globe-africa"></i> AfriConnect</a>
         <input type="checkbox" id="menu-toggle" class="menu-toggle" />
@@ -31,7 +32,10 @@
         </div>
     </header>
 
+    <!-- ===== PAGE INTERVENANTS ===== -->
     <main>
+
+        <!-- Hero interne -->
         <section class="inner-hero">
             <div class="container">
                 <div class="breadcrumb">
@@ -43,14 +47,99 @@
                 <p>Des experts passionnés venus de tout le continent pour partager leur vision.</p>
             </div>
         </section>
+
+        <!-- ===== FILTRES ===== -->
         <section class="container">
-            <!-- Contenu à venir -->
+            <div class="filters-container">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="ia">IA & Tech</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="data">Data</button>
+            </div>
         </section>
+
+        <!-- ===== GRILLE INTERVENANTS ===== -->
         <section class="container section-fade">
-            <!-- Contenu à venir -->
+            <div class="speakers-grid-full" id="speakersGrid">
+                <!-- Carte 1 -->
+                <div class="speaker-full" data-category="ia">
+                    <div class="avatar-lg">A</div>
+                    <h4>Amara Diallo</h4>
+                    <div class="specialite">CTO, Wave Sénégal</div>
+                    <div class="pays"><i class="fas fa-map-marker-alt"></i> Sénégal</div>
+                    <span class="tag">IA & Tech</span>
+                </div>
+                <!-- Carte 2 -->
+                <div class="speaker-full" data-category="business">
+                    <div class="avatar-lg">K</div>
+                    <h4>Kofi Mensah</h4>
+                    <div class="specialite">Investisseur, Seedstars</div>
+                    <div class="pays"><i class="fas fa-map-marker-alt"></i> Ghana</div>
+                    <span class="tag">Business</span>
+                </div>
+                <!-- Carte 3 -->
+                <div class="speaker-full" data-category="data">
+                    <div class="avatar-lg">Z</div>
+                    <h4>Zahara Okafor</h4>
+                    <div class="specialite">Data Scientist, Google</div>
+                    <div class="pays"><i class="fas fa-map-marker-alt"></i> Nigeria</div>
+                    <span class="tag">Data</span>
+                </div>
+                <!-- Carte 4 -->
+                <div class="speaker-full" data-category="design">
+                    <div class="avatar-lg">F</div>
+                    <h4>Fatima Sy</h4>
+                    <div class="specialite">UX Designer, Figma</div>
+                    <div class="pays"><i class="fas fa-map-marker-alt"></i> Sénégal</div>
+                    <span class="tag">Design</span>
+                </div>
+                <!-- Carte 5 -->
+                <div class="speaker-full" data-category="ia">
+                    <div class="avatar-lg">A</div>
+                    <h4>Abdoulaye Diop</h4>
+                    <div class="specialite">Expert Cybersécurité</div>
+                    <div class="pays"><i class="fas fa-map-marker-alt"></i> Mali</div>
+                    <span class="tag">IA & Tech</span>
+                </div>
+                <!-- Carte 6 -->
+                <div class="speaker-full" data-category="business">
+                    <div class="avatar-lg">N</div>
+                    <h4>Nadia Benali</h4>
+                    <div class="specialite">CEO, GreenTech Africa</div>
+                    <div class="pays"><i class="fas fa-map-marker-alt"></i> Maroc</div>
+                    <span class="tag">Business</span>
+                </div>
+                <!-- Carte 7 -->
+                <div class="speaker-full" data-category="data">
+                    <div class="avatar-lg">M</div>
+                    <h4>Moussa Traoré</h4>
+                    <div class="specialite">Data Engineer, Orange</div>
+                    <div class="pays"><i class="fas fa-map-marker-alt"></i> Côte d'Ivoire</div>
+                    <span class="tag">Data</span>
+                </div>
+                <!-- Carte 8 -->
+                <div class="speaker-full" data-category="design">
+                    <div class="avatar-lg">Y</div>
+                    <h4>Youssouf Ndiaye</h4>
+                    <div class="specialite">CEO, AfriLabs</div>
+                    <div class="pays"><i class="fas fa-map-marker-alt"></i> Sénégal</div>
+                    <span class="tag">Design</span>
+                </div>
+                <!-- Carte 9 -->
+                <div class="speaker-full" data-category="business">
+                    <div class="avatar-lg">G</div>
+                    <h4>Grace Odhiambo</h4>
+                    <div class="specialite">Directrice, Startup Grind</div>
+                    <div class="pays"><i class="fas fa-map-marker-alt"></i> Kenya</div>
+                    <span class="tag">Business</span>
+                </div>
+            </div>
         </section>
+
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer class="container footer">
         <div class="footer-col">
             <h4><i class="fas fa-globe-africa"></i> AfriConnect</h4>
