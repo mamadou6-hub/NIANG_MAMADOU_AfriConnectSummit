@@ -8,18 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!--  NAVBAR  -->
     <header class="navbar">
         <a href="index.html" class="logo"><i class="fas fa-globe-africa"></i> AfriConnect</a>
         <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-        <label for="menu-toggle" class="hamburger" aria-label="Menu">
-            <i class="fas fa-bars"></i>
-        </label>
+        <label for="menu-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
         <div class="nav-links">
             <a href="index.html">Accueil</a>
             <a href="programme.html">Programme</a>
@@ -27,7 +23,7 @@
             <a href="contact.html" class="active">Contact</a>
         </div>
         <div class="nav-right">
-            <label class="theme-toggle" aria-label="Thème">
+            <label class="theme-toggle">
                 <input type="checkbox" id="themeCheckbox" />
                 <i class="fas fa-moon"></i>
                 <i class="fas fa-sun"></i>
@@ -35,181 +31,29 @@
         </div>
     </header>
 
-    <!--  HERO INTERNE  -->
-    <section class="inner-hero">
-        <div class="container">
-            <div class="breadcrumb">
-                <a href="index.html">Accueil</a>
-                <span class="separator">></span>
-                <span>Inscription & Contact</span>
+    <main>
+        <section class="inner-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Accueil</a>
+                    <span class="separator">></span>
+                    <span>Inscription & Contact</span>
+                </div>
+                <h1>Inscription <span>AfriConnect</span></h1>
+                <p>Rejoignez l'événement tech le plus influent d'Afrique francophone.</p>
             </div>
-            <h1>Inscription <span>AfriConnect</span></h1>
-            <p>Rejoignez l'événement tech le plus influent d'Afrique francophone.</p>
-        </div>
-    </section>
+        </section>
+        <section class="container">
+            <!-- Contenu à venir -->
+        </section>
+        <section class="container section-fade">
+            <!-- Contenu à venir -->
+        </section>
+    </main>
 
-    <!--  FORMULAIRE 2 COLONNES  -->
-    <section class="container">
-        <div class="contact-wrapper">
-            <!-- Formulaire -->
-            <div class="form-col">
-                <form id="inscriptionForm" novalidate>
-                    <h2><i class="fas fa-pen-alt"></i> Inscrivez-vous</h2>
-                    
-                    <div class="form-group">
-                        <label for="nom">Nom complet <span class="required">*</span></label>
-                        <input type="text" id="nom" placeholder="Votre nom complet" required />
-                        <span class="error-msg" id="nomError">Veuillez saisir votre nom.</span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email <span class="required">*</span></label>
-                        <input type="email" id="email" placeholder="exemple@domaine.com" required />
-                        <span class="error-msg" id="emailError">Email invalide (ex: nom@domaine.com).</span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="telephone">Téléphone <span class="required">*</span></label>
-                        <input type="tel" id="telephone" placeholder="+221 77 123 4567" required />
-                        <span class="error-msg" id="telephoneError">Minimum 8 chiffres.</span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="participation">Type de participation <span class="required">*</span></label>
-                        <select id="participation" required>
-                            <option value="">Sélectionnez...</option>
-                            <option value="presentiel">Présentiel</option>
-                            <option value="en-ligne">En ligne</option>
-                            <option value="exposant">Exposant</option>
-                            <option value="intervenant">Intervenant</option>
-                        </select>
-                        <span class="error-msg" id="participationError">Veuillez choisir un type.</span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="pays">Pays d'origine <span class="required">*</span></label>
-                        <select id="pays" required>
-                            <option value="">Sélectionnez...</option>
-                            <option value="Senegal">Sénégal</option>
-                            <option value="CoteIvoire">Côte d'Ivoire</option>
-                            <option value="Mali">Mali</option>
-                            <option value="Nigeria">Nigeria</option>
-                            <option value="Ghana">Ghana</option>
-                            <option value="Maroc">Maroc</option>
-                            <option value="Tunisie">Tunisie</option>
-                            <option value="Algerie">Algérie</option>
-                            <option value="Cameroun">Cameroun</option>
-                            <option value="RD Congo">RD Congo</option>
-                            <option value="Benin">Bénin</option>
-                            <option value="Togo">Togo</option>
-                        </select>
-                        <span class="error-msg" id="paysError">Veuillez sélectionner votre pays.</span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message / Motivation <span class="required">*</span></label>
-                        <textarea id="message" rows="4" placeholder="Dites-nous pourquoi vous souhaitez participer..." required></textarea>
-                        <span class="error-msg" id="messageError">Minimum 20 caractères.</span>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-full"><i class="fas fa-paper-plane"></i> Envoyer</button>
-                    <div id="formSuccess" class="success-msg" style="display:none;">
-                        <i class="fas fa-check-circle"></i> Inscription validée ! Merci de votre confiance.
-                    </div>
-                </form>
-            </div>
-
-            <!-- Infos droite -->
-            <div class="info-col">
-                <h2><i class="fas fa-info-circle"></i> Informations</h2>
-                <div class="info-item">
-                    <i class="fas fa-map-pin"></i>
-                    <div><strong>Lieu</strong><br />CICAD, Dakar<br />Sénégal</div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-calendar-alt"></i>
-                    <div><strong>Dates</strong><br />15-17 octobre 2026</div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-clock"></i>
-                    <div><strong>Horaires</strong><br />09:00 – 18:00</div>
-                </div>
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <div><strong>Contact</strong><br />contact@africonnect.tech</div>
-                </div>
-
-                <!-- Carte Google Maps -->
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15436.78656606714!2d-17.467199!3d14.6937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173d0b2e5c4f7%3A0x5a3a6b6f8c4d8a7!2sDakar%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2sfr!4v1700000000000" 
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--  FAQ ACCORDÉON CSS PUR  -->
-    <section class="container" id="faq">
-        <h2 class="section-title"><i class="fas fa-question-circle"></i> Foire aux questions</h2>
-        <div class="faq-container">
-            <div class="faq-item">
-                <input type="checkbox" id="faq1" />
-                <label for="faq1" class="faq-question">
-                    <span>Comment puis-je m'inscrire ?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </label>
-                <div class="faq-answer">
-                    <p>Vous pouvez vous inscrire directement via le formulaire d'inscription ci-dessus. Une confirmation vous sera envoyée par email.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <input type="checkbox" id="faq2" />
-                <label for="faq2" class="faq-question">
-                    <span>Y a-t-il des frais d'inscription ?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </label>
-                <div class="faq-answer">
-                    <p>L'inscription est gratuite pour les étudiants et les startups. Pour les professionnels, un tarif préférentiel est disponible jusqu'au 1er septembre.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <input type="checkbox" id="faq3" />
-                <label for="faq3" class="faq-question">
-                    <span>Puis-je participer en ligne ?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </label>
-                <div class="faq-answer">
-                    <p>Oui, une option de participation à distance est disponible avec accès aux streams et aux sessions de networking virtuelles.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <input type="checkbox" id="faq4" />
-                <label for="faq4" class="faq-question">
-                    <span>Y aura-t-il des opportunités de networking ?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </label>
-                <div class="faq-answer">
-                    <p>Plusieurs temps de networking sont prévus : pauses café, déjeuners, cocktail de clôture et une application de mise en relation.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <input type="checkbox" id="faq5" />
-                <label for="faq5" class="faq-question">
-                    <span>Où se déroule l'événement ?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </label>
-                <div class="faq-answer">
-                    <p>Le sommet a lieu au CICAD (Centre International de Conférences Abdou Diouf) à Dakar, Sénégal.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--  FOOTER  -->
     <footer class="container footer">
         <div class="footer-col">
-            <h4><i class="fas fa-globe-africa" style="color: var(--accent);"></i> AfriConnect</h4>
+            <h4><i class="fas fa-globe-africa"></i> AfriConnect</h4>
             <p>Le plus grand rassemblement tech d'Afrique francophone.</p>
             <div class="footer-socials">
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>

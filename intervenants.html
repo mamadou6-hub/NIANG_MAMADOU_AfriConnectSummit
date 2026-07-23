@@ -8,18 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!--  NAVBAR  -->
     <header class="navbar">
         <a href="index.html" class="logo"><i class="fas fa-globe-africa"></i> AfriConnect</a>
         <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-        <label for="menu-toggle" class="hamburger" aria-label="Menu">
-            <i class="fas fa-bars"></i>
-        </label>
+        <label for="menu-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
         <div class="nav-links">
             <a href="index.html">Accueil</a>
             <a href="programme.html">Programme</a>
@@ -27,7 +23,7 @@
             <a href="contact.html">Contact</a>
         </div>
         <div class="nav-right">
-            <label class="theme-toggle" aria-label="Thème">
+            <label class="theme-toggle">
                 <input type="checkbox" id="themeCheckbox" />
                 <i class="fas fa-moon"></i>
                 <i class="fas fa-sun"></i>
@@ -35,102 +31,29 @@
         </div>
     </header>
 
-    <!--  HERO INTERNE  -->
-    <section class="inner-hero">
-        <div class="container">
-            <div class="breadcrumb">
-                <a href="index.html">Accueil</a>
-                <span class="separator">></span>
-                <span>Intervenants</span>
+    <main>
+        <section class="inner-hero">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Accueil</a>
+                    <span class="separator">></span>
+                    <span>Intervenants</span>
+                </div>
+                <h1>Intervenants <span>2026</span></h1>
+                <p>Des experts passionnés venus de tout le continent pour partager leur vision.</p>
             </div>
-            <h1>Intervenants <span>2026</span></h1>
-            <p>Des experts passionnés venus de tout le continent pour partager leur vision.</p>
-        </div>
-    </section>
+        </section>
+        <section class="container">
+            <!-- Contenu à venir -->
+        </section>
+        <section class="container section-fade">
+            <!-- Contenu à venir -->
+        </section>
+    </main>
 
-    <!--  FILTRES  -->
-    <section class="container">
-        <div class="filters-container">
-            <button class="filter-btn active" data-filter="all">Tous</button>
-            <button class="filter-btn" data-filter="ia">IA & Tech</button>
-            <button class="filter-btn" data-filter="business">Business</button>
-            <button class="filter-btn" data-filter="design">Design</button>
-            <button class="filter-btn" data-filter="data">Data</button>
-        </div>
-
-        <!--  GRILLE INTERVENANTS  -->
-        <div class="speakers-grid-full" id="speakersGrid">
-            <!-- 9 intervenants fictifs -->
-            <div class="speaker-full" data-category="ia">
-                <div class="avatar-lg">A</div>
-                <h4>Amara Diallo</h4>
-                <div class="specialite">CTO, Wave Sénégal</div>
-                <div class="pays"><i class="fas fa-map-marker-alt"></i> Sénégal</div>
-                <span class="tag">IA & Tech</span>
-            </div>
-            <div class="speaker-full" data-category="business">
-                <div class="avatar-lg">K</div>
-                <h4>Kofi Mensah</h4>
-                <div class="specialite">Investisseur, Seedstars</div>
-                <div class="pays"><i class="fas fa-map-marker-alt"></i> Ghana</div>
-                <span class="tag">Business</span>
-            </div>
-            <div class="speaker-full" data-category="data">
-                <div class="avatar-lg">Z</div>
-                <h4>Zahara Okafor</h4>
-                <div class="specialite">Data Scientist, Google</div>
-                <div class="pays"><i class="fas fa-map-marker-alt"></i> Nigeria</div>
-                <span class="tag">Data</span>
-            </div>
-            <div class="speaker-full" data-category="design">
-                <div class="avatar-lg">F</div>
-                <h4>Fatima Sy</h4>
-                <div class="specialite">UX Designer, Figma</div>
-                <div class="pays"><i class="fas fa-map-marker-alt"></i> Sénégal</div>
-                <span class="tag">Design</span>
-            </div>
-            <div class="speaker-full" data-category="ia">
-                <div class="avatar-lg">A</div>
-                <h4>Abdoulaye Diop</h4>
-                <div class="specialite">Expert Cybersécurité</div>
-                <div class="pays"><i class="fas fa-map-marker-alt"></i> Mali</div>
-                <span class="tag">IA & Tech</span>
-            </div>
-            <div class="speaker-full" data-category="business">
-                <div class="avatar-lg">N</div>
-                <h4>Nadia Benali</h4>
-                <div class="specialite">CEO, GreenTech Africa</div>
-                <div class="pays"><i class="fas fa-map-marker-alt"></i> Maroc</div>
-                <span class="tag">Business</span>
-            </div>
-            <div class="speaker-full" data-category="data">
-                <div class="avatar-lg">M</div>
-                <h4>Moussa Traoré</h4>
-                <div class="specialite">Data Engineer, Orange</div>
-                <div class="pays"><i class="fas fa-map-marker-alt"></i> Côte d'Ivoire</div>
-                <span class="tag">Data</span>
-            </div>
-            <div class="speaker-full" data-category="design">
-                <div class="avatar-lg">Y</div>
-                <h4>Youssouf Ndiaye</h4>
-                <div class="specialite">CEO, AfriLabs</div>
-                <div class="pays"><i class="fas fa-map-marker-alt"></i> Sénégal</div>
-                <span class="tag">Design</span>
-            </div>
-            <div class="speaker-full" data-category="business">
-                <div class="avatar-lg">G</div>
-                <h4>Grace Odhiambo</h4>
-                <div class="specialite">Directrice, Startup Grind</div>
-                <div class="pays"><i class="fas fa-map-marker-alt"></i> Kenya</div>
-                <span class="tag">Business</span>
-            </div>
-        </div>
-    </section>
-
-    <!--  FOOTER  -->
     <footer class="container footer">
         <div class="footer-col">
-            <h4><i class="fas fa-globe-africa" style="color: var(--accent);"></i> AfriConnect</h4>
+            <h4><i class="fas fa-globe-africa"></i> AfriConnect</h4>
             <p>Le plus grand rassemblement tech d'Afrique francophone.</p>
             <div class="footer-socials">
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>

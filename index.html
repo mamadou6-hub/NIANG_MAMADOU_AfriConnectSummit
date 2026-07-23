@@ -4,32 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AfriConnect Summit 2026 · Accueil</title>
-    <!-- Google Fonts expressive -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <!-- CSS séparé -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <!-- NAVBAR FIXE  -->
+    <!-- ===== NAVBAR ===== -->
     <header class="navbar">
-        <a href="#" class="logo"><i class="fas fa-globe-africa"></i> AfriConnect</a>
+        <a href="index.html" class="logo"><i class="fas fa-globe-africa"></i> AfriConnect</a>
         <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-        <label for="menu-toggle" class="hamburger" aria-label="Menu">
-            <i class="fas fa-bars"></i>
-        </label>
-        <div class="nav-links" id="navLinks">
-            <a href="index.html">Accueil</a>
-            <a href="#">Programme</a>
+        <label for="menu-toggle" class="hamburger"><i class="fas fa-bars"></i></label>
+        <div class="nav-links">
+            <a href="index.html" class="active">Accueil</a>
+            <a href="programme.html">Programme</a>
             <a href="intervenants.html">Intervenants</a>
-            <a href="#">Sponsors</a>
+            <a href="contact.html">Contact</a>
         </div>
         <div class="nav-right">
-            <label class="theme-toggle" aria-label="Thème">
+            <label class="theme-toggle">
                 <input type="checkbox" id="themeCheckbox" />
                 <i class="fas fa-moon"></i>
                 <i class="fas fa-sun"></i>
@@ -37,159 +32,48 @@
         </div>
     </header>
 
-    <!--  HERO PLEIN ÉCRAN  -->
-    <section class="hero container" id="hero">
-        <div class="hero-content">
-            <div class="hero-badge">
-                <i class="fas fa-calendar-alt"></i> 15 – 17 Oct 2026 · Dakar, Sénégal
+    <!-- ===== PAGE ACCUEIL ===== -->
+    <main>
+        <section class="hero container">
+            <div class="hero-content">
+                <!-- Contenu à venir -->
             </div>
-            <h1>L'innovation <span>africaine</span><br />prend racine ici.</h1>
-            <p>Développeurs, entrepreneurs et investisseurs se rencontrent pour bâtir l'avenir tech du continent. Rejoignez le mouvement.</p>
-            <div class="hero-actions">
-                <a href="#" class="btn btn-primary"><i class="fas fa-ticket-alt"></i> Réserver</a>
-                <a href="#" class="btn btn-outline"><i class="fas fa-play-circle"></i> Programme</a>
-            </div>
-           
-            <div class="countdown" id="countdown">
-                <div class="countdown-item">
-                    <span class="number" id="days">--</span>
-                    <div class="label">Jours</div>
-                </div>
-                <div class="countdown-item">
-                    <span class="number" id="hours">--</span>
-                    <div class="label">Heures</div>
-                </div>
-                <div class="countdown-item">
-                    <span class="number" id="minutes">--</span>
-                    <div class="label">Minutes</div>
-                </div>
-                <div class="countdown-item">
-                    <span class="number" id="seconds">--</span>
-                    <div class="label">Secondes</div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+        <section class="container section-fade">
+            <!-- Contenu à venir -->
+        </section>
+        <section class="container section-fade">
+            <!-- Contenu à venir -->
+        </section>
+    </main>
 
-    <!--  CHIFFRES CLÉS  -->
-    <section class="container fade-section" id="stats">
-        <h2 class="section-title"><i class="fas fa-chart-line"></i> AfriConnect en chiffres</h2>
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-number">1 200+</div>
-                <div class="stat-label">Participants</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">48</div>
-                <div class="stat-label">Intervenants</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">3</div>
-                <div class="stat-label">Jours</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number">12</div>
-                <div class="stat-label">Pays représentés</div>
-            </div>
-        </div>
-    </section>
-
-    <!--  POURQUOI PARTICIPER  -->
-    <section class="container fade-section" id="pourquoi">
-        <h2 class="section-title"><i class="fas fa-lightbulb"></i> Pourquoi participer ?</h2>
-        <div class="flex-3">
-            <div class="arg">
-                <i class="fas fa-code"></i>
-                <h3>Dev & IA</h3>
-                <p>Ateliers pratiques, hackathons et keynote sur l'IA générative, la fintech et l'agritech.</p>
-            </div>
-            <div class="arg">
-                <i class="fas fa-handshake"></i>
-                <h3>Networking</h3>
-                <p>Rencontrez 500+ décideurs, investisseurs et talents venus de 25 pays africains.</p>
-            </div>
-            <div class="arg">
-                <i class="fas fa-rocket"></i>
-                <h3>Startups</h3>
-                <p>Pitch compétition, mentorat et accès à des fonds d'amorçage pour les projets prometteurs.</p>
-            </div>
-        </div>
-    </section>
-
-    <!--  INTERVENANTS VEDETTES  -->
-    <section class="container fade-section" id="speakers">
-        <h2 class="section-title"><i class="fas fa-users"></i> Intervenants vedettes</h2>
-        <div class="speakers-grid">
-            <div class="speaker-card">
-                <div class="avatar">A</div>
-                <h4>Amara Diallo</h4>
-                <div class="title">CTO, Wave Sénégal</div>
-                <div class="country"><i class="fas fa-map-marker-alt"></i> Sénégal</div>
-            </div>
-            <div class="speaker-card">
-                <div class="avatar">K</div>
-                <h4>Kofi Mensah</h4>
-                <div class="title">Investisseur, Seedstars</div>
-                <div class="country"><i class="fas fa-map-marker-alt"></i> Ghana</div>
-            </div>
-            <div class="speaker-card">
-                <div class="avatar">Z</div>
-                <h4>Zahara Okafor</h4>
-                <div class="title">Data Scientist, Google</div>
-                <div class="country"><i class="fas fa-map-marker-alt"></i> Nigeria</div>
-            </div>
-            <div class="speaker-card">
-                <div class="avatar">Y</div>
-                <h4>Youssouf Ndiaye</h4>
-                <div class="title">CEO, AfriLabs</div>
-                <div class="country"><i class="fas fa-map-marker-alt"></i> Sénégal</div>
-            </div>
-        </div>
-        <div class="btn-center">
-            <a href="intervenants.html" class="btn btn-outline"><i class="fas fa-arrow-right"></i> Voir tous les intervenants</a>
-        </div>
-    </section>
-
-    <!--  SPONSORS  -->
-    <section class="container fade-section" id="sponsors">
-        <h2 class="section-title"><i class="fas fa-handshake"></i> Nos sponsors</h2>
-        <div class="sponsors-tier">
-            <div class="sponsor gold"><i class="fas fa-crown"></i> Orange</div>
-            <div class="sponsor gold"><i class="fas fa-crown"></i> Ecobank</div>
-            <div class="sponsor silver"><i class="fas fa-star"></i> Google</div>
-            <div class="sponsor silver"><i class="fas fa-star"></i> Microsoft</div>
-            <div class="sponsor bronze"><i class="fas fa-medal"></i> AfriLabs</div>
-            <div class="sponsor bronze"><i class="fas fa-medal"></i> Wave</div>
-        </div>
-    </section>
-
-    <!--  FOOTER  -->
+    <!-- ===== FOOTER ===== -->
     <footer class="container footer">
         <div class="footer-col">
-            <h4><i class="fas fa-globe-africa" style="color: var(--accent);"></i> AfriConnect</h4>
+            <h4><i class="fas fa-globe-africa"></i> AfriConnect</h4>
             <p>Le plus grand rassemblement tech d'Afrique francophone.</p>
             <div class="footer-socials">
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
         <div class="footer-col">
             <h4>Liens rapides</h4>
-            <a href="#">Programme</a>
+            <a href="programme.html">Programme</a>
             <a href="intervenants.html">Intervenants</a>
-            <a href="#">Sponsors</a>
-            <a href="#">Contact</a>
+            <a href="contact.html">Contact</a>
         </div>
         <div class="footer-col">
             <h4>Infos</h4>
             <p><i class="fas fa-map-pin"></i> Dakar, Sénégal</p>
             <p><i class="fas fa-calendar"></i> 15-17 Oct 2026</p>
-            <a href="#hero" class="back-top"><i class="fas fa-arrow-up"></i> Retour en haut</a>
-            <div class="copyright">© 2026 AfriConnect Summit. Tous droits réservés.</div>
+            <a href="#" class="back-top"><i class="fas fa-arrow-up"></i> Retour en haut</a>
+            <div class="copyright">© 2026 AfriConnect Summit</div>
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
