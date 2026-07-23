@@ -1406,3 +1406,324 @@ body {
     .info-col {
         position: static;
         width;
+        /* ============================================
+   COMMIT 8 - FINALISATION RESPONSIVE
+   ============================================ */
+
+/* ===== RESPONSIVE SUPPLEMENTAIRE ===== */
+
+/* Tablettes et petits écrans */
+@media (max-width: 992px) {
+    .speakers-grid-full {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-wrapper {
+        gap: 30px;
+    }
+    
+    .hero h1 {
+        font-size: clamp(2.4rem, 7vw, 3.8rem);
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        padding: 12px 0 6px;
+        order: 3;
+        background: var(--blanc);
+        border-radius: 0 0 var(--coins) var(--coins);
+        box-shadow: var(--ombre);
+    }
+    
+    .menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+    
+    .navbar {
+        flex-wrap: wrap;
+        padding: 12px 16px;
+    }
+    
+    .nav-right {
+        margin-left: auto;
+    }
+    
+    .hero {
+        min-height: auto;
+        padding: 120px 0 40px;
+    }
+    
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .hero-actions .btn {
+        justify-content: center;
+    }
+    
+    .countdown-item {
+        padding: 8px 14px;
+        min-width: 60px;
+    }
+    
+    .countdown-item .number {
+        font-size: 1.4rem;
+    }
+    
+    .countdown-item .label {
+        font-size: 0.65rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .stat-number {
+        font-size: 2.2rem;
+    }
+    
+    .flex-3 {
+        flex-direction: column;
+    }
+    
+    .flex-3 .arg {
+        flex: 1 1 auto;
+    }
+    
+    .speakers-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .speakers-grid-full {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .sponsors-tier {
+        gap: 20px 30px;
+    }
+    
+    .sponsor.gold {
+        font-size: 1.2rem;
+        padding: 14px 24px;
+    }
+    
+    .sponsor.silver {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+    
+    .sponsor.bronze {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+    
+    .inner-hero {
+        padding: 100px 0 30px;
+    }
+    
+    .inner-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+        margin: 40px 0 20px;
+    }
+    
+    .themes-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .tabs-nav {
+        flex-direction: column;
+        gap: 4px;
+        border-bottom: none;
+    }
+    
+    .tab-btn {
+        padding: 12px 20px;
+        border-radius: 12px;
+        text-align: center;
+        border: 1px solid var(--bordure);
+    }
+    
+    .tab-btn.active {
+        border-bottom: 2px solid var(--aqua);
+    }
+    
+    .schedule {
+        font-size: 0.75rem;
+    }
+    
+    .schedule th,
+    .schedule td {
+        padding: 8px 6px;
+    }
+    
+    .schedule td:last-child,
+    .schedule th:last-child {
+        display: none;
+    }
+    
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .info-col {
+        position: static;
+        width: 100%;
+    }
+    
+    .form-col h2,
+    .info-col h2 {
+        font-size: 1.4rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 14px;
+        font-size: 0.95rem;
+    }
+    
+    .map-container iframe {
+        height: 180px;
+    }
+    
+    .faq-question {
+        font-size: 0.95rem;
+        padding: 14px 18px;
+    }
+    
+    .faq-answer {
+        font-size: 0.9rem;
+        padding: 0 18px;
+    }
+    
+    .faq-item input:checked ~ .faq-answer {
+        padding: 0 18px 16px;
+    }
+    
+    .filters-container {
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+    
+    .speaker-full .avatar-lg {
+        width: 70px;
+        height: 70px;
+        font-size: 1.8rem;
+    }
+    
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 0 20px;
+    }
+    
+    .footer-col {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+    
+    .footer-socials {
+        justify-content: center;
+    }
+}
+
+/* Tres petits mobiles */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+    .speakers-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+    .speaker-card {
+        padding: 16px 10px;
+    }
+    
+    .speaker-card .avatar {
+        width: 60px;
+        height: 60px;
+        font-size: 1.4rem;
+    }
+    
+    .countdown {
+        gap: 10px;
+    }
+    
+    .countdown-item {
+        padding: 6px 12px;
+        min-width: 50px;
+    }
+    
+    .countdown-item .number {
+        font-size: 1.2rem;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .schedule {
+        font-size: 0.65rem;
+    }
+    
+    .schedule th,
+    .schedule td {
+        padding: 6px 4px;
+    }
+    
+    .info-item {
+        padding: 12px 14px;
+    }
+    
+    .info-item i {
+        font-size: 1.1rem;
+        width: 24px;
+    }
+}
